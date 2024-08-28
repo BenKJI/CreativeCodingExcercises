@@ -19,7 +19,7 @@ public class BouncingBalls extends PApplet {
     PVector mousePos = new PVector(mouseX,mouseY);
 
     public void draw() {
-        background(255);
+        background(0);
 
         mousePos = new PVector(mouseX,mouseY);
 

@@ -65,6 +65,7 @@ public class AttractedTriangles extends PApplet {
             position = PVector.add(velocity,position);
         }
         void draw(){
+            //background(0);
             stroke(0);
             fill(255);
             pushMatrix();

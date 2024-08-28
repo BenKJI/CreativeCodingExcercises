@@ -39,7 +39,12 @@ public class CirclePacking extends PApplet {
         filter(BLUR,5);
     }
 
+    boolean start = false;
+
     public void draw() {
+        if(!start){
+            return;
+        }
         for(int i = 0; i <= spawnRate; i++){
             Circle newCircle = createNewCircle();
             circles.add(newCircle);
@@ -72,6 +77,13 @@ public class CirclePacking extends PApplet {
             return createNewCircle();
         }
         return newCircle;
+    }
+
+    @Override
+    public void keyPressed() {
+        if(key == ' '){
+            start = true;
+        }
     }
 
     public static void main(String[] args) {

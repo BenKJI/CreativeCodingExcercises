@@ -8,7 +8,7 @@ public class MovingCircles extends PApplet {
     int border = 2;
     int height = 20;
     int width = 30;
-    float movementMultiplicator = 0.01f;
+    float movementMultiplicator = 0.02f;
     long seed;
     int startMouseX = mouseX;
     int startMouseY = mouseY;

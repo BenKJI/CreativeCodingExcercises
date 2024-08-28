@@ -69,12 +69,7 @@ public class ParticleSystem extends PApplet {
             lifespan -=2;
         }
         void draw(){
-            /*
-            stroke(0,lifespan);
-            fill(255,lifespan);
-            circle(position.x, position.y, 8);
-            */
-            tint(0, 255, 0, lifespan);
+            tint(16, 255, 16, lifespan);
             image(img, position.x, position.y,128,128);
         }
 
